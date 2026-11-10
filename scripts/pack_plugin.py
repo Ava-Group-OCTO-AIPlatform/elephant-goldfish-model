@@ -20,8 +20,11 @@ SHARED = (
     "assets/*.svg", "assets/*.png", "docs/assets/*.svg", "docs/assets/*.png",
 )
 HOST = {
+    # hooks/: Intelligence Hub telemetry hooks of the Avanade fork (read by
+    # Claude Code from hooks/hooks.json; the manifest declares no hooks).
     "claude": (".claude-plugin/plugin.json", ".claude-plugin/icon.png",
-               ".claude-plugin/agents/*.md"),
+               ".claude-plugin/agents/*.md", "hooks/hooks.json",
+               "hooks/aap-telemetry/hook.mjs", "hooks/aap-telemetry/README.md"),
     "openai": (".codex-plugin/plugin.json",),
 }
 SKILLS = (

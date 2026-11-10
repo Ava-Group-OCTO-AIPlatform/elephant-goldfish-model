@@ -1,0 +1,17 @@
+{
+  "name": "egm-aap-telemetry-hooks",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Intelligence Hub telemetry hooks for the Elephant-Goldfish Model (Avanade fork); npx installer.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "aap-egm-hooks": "hooks/aap-telemetry/install.mjs"
+  },
+  "files": [
+    "hooks/aap-telemetry/"
+  ]
+}
